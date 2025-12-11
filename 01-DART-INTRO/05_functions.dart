@@ -1,3 +1,7 @@
+/**
+ * @description: Main entry point of the program.
+ * @returns: void
+ */
 void main(){
   
   String name = "Jesus";
@@ -17,18 +21,39 @@ void main(){
   
 }
 
-
+/**
+ * @description: Saluda a una persona.
+ * @param: name - El nombre de la persona.
+ * @param: lastname - El apellido de la persona.
+ * @returns: void
+ * @example: saludo("Jesus", "Trujillo");
+ */
 saludo(name, lastname) => print("Hola ${name} ${lastname}");
 
+/**
+ * @description: Suma dos números.
+ * @param: n1 - El primer número.
+ * @param: n2 - El segundo número.
+ * @returns: int
+ */
 sumaDeNumeros(int n1, int n2) => n1 + n2;
 
-/// Resta dos números enteros y devuelve el resultado.
-///
-/// [n1] El primer número (minuendo).
-/// [n2] El segundo número (sustraendo).
-/// Returns la diferencia entre [n1] y [n2].
+/**
+ * @description: Resta dos números.
+ * @param: n1 - El primer número.
+ * @param: n2 - El segundo número.
+ * @returns: int
+ * @example: restaNumeros(30, 12);
+ */
 int restaNumeros(int n1, int n2) => n1 - n2;
 
+/**
+ * @description: Multiplica dos números.
+ * @param: n1 - El primer número.
+ * @param: n2 - El segundo número.
+ * @returns: int
+ * @example: multiNumeros(30, 12);
+ */
 int multiNumeros(int n1, [int n2 = 2]) {
   
   final int m = n1 * n2;
@@ -36,6 +61,13 @@ int multiNumeros(int n1, [int n2 = 2]) {
   return m;
 }
 
+/**
+ * @description: Devuelve un mensaje de bienvenida para la familia Trujillo.
+ * @param: name - El nombre de la persona.
+ * @param: msg - El mensaje de bienvenida.
+ * @returns: String
+ * @example: familiaTrujillo(name: "Jesus", msg: "Jehova bendiga por siempre a ");
+ */
 String familiaTrujillo({ required String name, String msg = "Jehova bendiga por siempre a "}){
   
   return "$msg $name";
