@@ -43,6 +43,17 @@ class Person {
       work = pWork,
       age  = pAge,
       value = pValue;
+
+  /**
+   * Metodo para imprimir el objeto Person
+   * El override es para sobreescribir el metodo toString de la clase Object
+   * y devolver el nombre de la persona, su trabajo, su edad y su valor
+   * @return String
+   */
+  @override
+  String toString(){
+    return 'El nombre de la persona es ${this.name} y su trabajo es ${this.work} y su edad es ${this.age} y su valor es ${this.value}';
+  }
       
   /**
    * Metodo para cambiar el nombre de la persona
